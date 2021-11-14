@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+$titFont : "Roboto Slab";
+
+body{
+    background:#000;
+}
+
+#header{
+    width:100%;
+    .inner{
+        width:1180px; height:120px; margin:0 auto;
+        position:relative; padding-top:50px;
+        &::after{
+            content:''; display:block; clear:both;
+        }
+        h1{
+            font:30px/1 "arial"; color:#fff;
+            float:left;
+        }
+        a{
+            font:24px/1 "arial"; color:#fff;
+            float:right;
+        }
+    }
+    
+}
+#visual{
+    width:1180px; margin:0 auto;
+    &::after{
+        content:''; display:block; clear:both;
+    }
+
+    .item-sizer{
+        width:25%; height:0; opacity:0;
+    }
+
+    .item{
+        width:25%; height:30vh;
+        padding:12px; float:left; 
+        .inner{
+            width:100%; height:100%; position:relative;
+            background-color:#555; 
+            img{
+                padding:10px;
+                width:100%; height:100%; object-fit: cover;
+            }
+            h2{
+                position:absolute; top:200px; left:40px; 
+                font:48px/1 $titFont; color:#fff;
+            }
+            p{
+                width:60%;
+                font:16px/1.3 $titFont; color:#fff;
+                position:absolute; top:280px; left:40px;
+            }
+        }
+
+        &:nth-of-type(2){
+            width:50%; height:60vh;
+            
+        }
+        &:nth-of-type(4){
+            height:60vh;
+        }
+        &:nth-of-type(8){
+            width:50%; height:60vh;
+        }
+        &:nth-of-type(10){
+            height:60vh;
+        }
+        &:nth-of-type(14){
+            width:50%;
+        }
+    }
+    
+}
+
