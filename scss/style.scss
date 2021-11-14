@@ -1,19 +1,19 @@
 @charset "utf-8";
 @import "reset";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
-$titFont : "Roboto Slab";
+$titFont : 'Noto Serif';
 
 body{
-    background:#000;
+    background:#040c22;
 }
 
 #header{
     width:100%;
     .inner{
         width:1180px; height:120px; margin:0 auto;
-        position:relative; padding-top:50px;
+        position:relative; padding:50px 13px 0 13px; 
         &::after{
             content:''; display:block; clear:both;
         }
@@ -40,13 +40,20 @@ body{
 
     .item{
         width:25%; height:30vh;
-        padding:12px; float:left; 
+        padding:13px; float:left; 
         .inner{
             width:100%; height:100%; position:relative;
-            background-color:#555; 
-            img{
-                padding:10px;
-                width:100%; height:100%; object-fit: cover;
+            .pic{ 
+                width:100%; height:100%;  padding:9px;
+                background-color:#353b46; overflow: hidden;
+                img{
+                    display:inline-block;
+                    width:100%; height:100%; object-fit: cover;
+                    transition:0.5s;  
+                }
+                &:hover{
+                    img{ transform:scale(1.1); }
+                }
             }
             h2{
                 position:absolute; top:200px; left:40px; 
@@ -54,8 +61,31 @@ body{
             }
             p{
                 width:60%;
-                font:16px/1.3 $titFont; color:#fff;
-                position:absolute; top:280px; left:40px;
+                font:16px/1.4 $titFont; color:#fff;
+                position:absolute; top:270px; left:40px;
+            }
+            a{
+                display:block; width:200px; height:50px;
+                position:absolute; top:350px; left:40px;
+                font: 14px/50px $titFont; color:rgb(131, 43, 17);
+                text-align:center; letter-spacing: 2px;
+                background:#fff;
+            }
+            h3{
+                font:40px/1 $titFont; color:#fff;
+                text-align: center; padding:30px 20px;
+                position:relative;
+                &::after{
+                    content:''; display:block;
+                    width:50px; height:1px; background:#aaa;
+                    position:absolute; left:50%; bottom:0;
+                    transform:translateX(-50%);
+                }
+            }
+            span{
+                display:block; margin-top:20px;
+                font:16px/1.4 "arial"; color:#fff;
+                text-align:center;
             }
         }
 

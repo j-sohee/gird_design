@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -14,7 +14,7 @@ body {
   background: #efefef; }
 
 body {
-  background: #000; }
+  background: #040c22; }
 
 #header {
   width: 100%; }
@@ -23,7 +23,7 @@ body {
     height: 120px;
     margin: 0 auto;
     position: relative;
-    padding-top: 50px; }
+    padding: 50px 13px 0 13px; }
     #header .inner::after {
       content: '';
       display: block;
@@ -51,31 +51,73 @@ body {
   #visual .item {
     width: 25%;
     height: 30vh;
-    padding: 12px;
+    padding: 13px;
     float: left; }
     #visual .item .inner {
       width: 100%;
       height: 100%;
-      position: relative;
-      background-color: #555; }
-      #visual .item .inner img {
-        padding: 10px;
+      position: relative; }
+      #visual .item .inner .pic {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        padding: 9px;
+        background-color: #353b46;
+        overflow: hidden; }
+        #visual .item .inner .pic img {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.5s; }
+        #visual .item .inner .pic:hover img {
+          transform: scale(1.1); }
       #visual .item .inner h2 {
         position: absolute;
         top: 200px;
         left: 40px;
-        font: 48px/1 "Roboto Slab";
+        font: 48px/1 "Noto Serif";
         color: #fff; }
       #visual .item .inner p {
         width: 60%;
-        font: 16px/1.3 "Roboto Slab";
+        font: 16px/1.4 "Noto Serif";
         color: #fff;
         position: absolute;
-        top: 280px;
+        top: 270px;
         left: 40px; }
+      #visual .item .inner a {
+        display: block;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        top: 350px;
+        left: 40px;
+        font: 14px/50px "Noto Serif";
+        color: #832b11;
+        text-align: center;
+        letter-spacing: 2px;
+        background: #fff; }
+      #visual .item .inner h3 {
+        font: 40px/1 "Noto Serif";
+        color: #fff;
+        text-align: center;
+        padding: 30px 20px;
+        position: relative; }
+        #visual .item .inner h3::after {
+          content: '';
+          display: block;
+          width: 50px;
+          height: 1px;
+          background: #aaa;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%); }
+      #visual .item .inner span {
+        display: block;
+        margin-top: 20px;
+        font: 16px/1.4 "arial";
+        color: #fff;
+        text-align: center; }
     #visual .item:nth-of-type(2) {
       width: 50%;
       height: 60vh; }
