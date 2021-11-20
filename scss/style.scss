@@ -19,11 +19,28 @@ main{
 
         .item{
             width:33.333%; height:60vh;
-            float:left; border-bottom:1px solid #ddd;
-            position:relative;
+            float:left; position:relative;
+            //border:1px solid #aaa;
+            
             .inner{
                 width:100%; height:100%;
                 background:#ebeae9; padding:20px;
+                
+                span{
+                    em{
+                        display:inline-block;
+                        width:22px; height:22px;
+                        border:1px solid #555;
+                        border-radius: 50%; margin-right:10px;
+                        transition:0.5s;
+                    }
+                    font:26px/1 $txtFont; color:#555;
+                }
+                h2{
+                    width:80%;
+                    font: 700 34px/1.1 $movieTit; color:#333;
+                    margin-top:10px;
+                }
             }
 
             &:nth-of-type(2){
@@ -53,7 +70,7 @@ main{
                     font:22px/1.5 $txtFont; color:#333;
                 }
             }
-            &:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5){
+            &:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(7),&:nth-of-type(8),&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(15),&:nth-of-type(16){
                 &:hover{
                     .line{
                         width:70%;
@@ -97,33 +114,114 @@ main{
                         width:100%; height:250px; object-fit: cover;
                     }
                 }
-                span{
-                    em{
-                        display:inline-block;
-                        width:22px; height:22px;
-                        border:1px solid #555;
-                        border-radius: 50%; margin-right:10px;
-                        transition:0.5s;
+                
+            }
+            &:nth-of-type(10){
+               width:99.999%;
+               .inner{
+                   padding:30px 10px;
+                   .wrap{
+                       width:100%; height:100%;
+                       background:#a31e32; padding:20px;
+                       .left{
+                           width: 50%; height:100%; float:left;
+                           font:40px/1 $titFont; color:#fff;
+                           border-right:1px solid #fff;
+                        }
+                       .right{
+                           width:50%; float:left; padding-left:30px;
+                           font:28px/2 $txtFont; color:#fff;
+                        }
+
+                   }
+               }
+            }
+            &:nth-of-type(6),&:nth-of-type(9),&:nth-of-type(14),&:nth-of-type(17){
+                width:66.666%; 
+                &:hover{
+                    .line>span{
+                        width:23%;
                     }
-                    font:26px/1 $txtFont; color:#555;
+                    a{
+                        right:100px;
+                    }
+                    span{
+                        em{
+                            background:#000;
+                        }
+                    }
+                }
+                .line{
+                    width:95%; height:100%; position:absolute; top:0; left:20px; transition:0.5s;
+                    overflow: hidden;
+                    &::before{
+                        content:''; display:block;
+                        width:100%; height:1px;
+                        background:#000;
+                    }
+                    >span{
+                        display:block;
+                        width:15%; height:1px;
+                        background:#000;
+                        position:absolute; top:0; right:0px;
+                        text-indent:-9999px;
+                        transform-origin: right top;
+                        transform:rotate(-45deg);
+                        transition:0.5s;   z-index:2;
+                    }
+                    &::after{
+                        content:''; display:block;
+                        width:1px; height:70%; position:absolute; bottom:30px; left:0;
+                        background:#000; transition:0.5s;
+                    }
                 }
                 h2{
-                    width:80%;
-                    font: 700 34px/1.1 $movieTit; color:#111;
-                    margin-top:10px;
+                    font-size:60px;
+                }
+                a{
+                    display:block; width:60%;
+                    position:absolute; bottom:20px; right:40px;
+                    transition:0.5s; margin-bottom:20px;
+                    z-index:1;
+                    img{
+                        width:100%; height:400px; object-fit: cover;
+                    }
+                    video{
+                        width:100%; height:400px;  object-fit: cover;
+                    }
                 }
             }
-            &:nth-of-type(6){
-                width:66.666%; 
-            }
-            &:nth-of-type(9){
-                width:66.666%; 
-            }
-            &:nth-of-type(16){
-                width:66.666%; 
-            }
-            &:nth-of-type(19){
-                width:66.666%; 
+            &:nth-of-type(18){
+                width:99.999%; height:20vh;
+                .inner{
+                    display:flex;
+                    justify-content: center; align-items:center;
+                    a{
+                        display:block;
+                        width:120px; height:40px;
+                        font:16px/40px $titFont; color:#000;
+                        border:1px solid #000; text-align:center;
+                        transition:0.5s;
+                        &::before{
+                            content:''; display:block;
+                            width:45%; height:1px;
+                            background:#000;
+                            position:absolute; top:50%; left:0;
+                        }
+                        
+                        &::after{
+                            content:''; display:block;
+                            width:45%; height:1px;
+                            background:#000;
+                            position:absolute; top:50%; right:0;
+                        }
+
+                        &:hover{
+                            background:#333; color:#fff;
+                        }
+                    }
+                }
+                
             }
         }
 
