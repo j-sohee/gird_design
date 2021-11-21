@@ -89,7 +89,7 @@ main{
                     .line{
                         width:70%;
                         &::after{
-                            height: 48%;
+                            height: 40%;
                         }
                     }
                     a{
@@ -285,11 +285,6 @@ main{
                     }
                 }
                 &:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(15),&:nth-of-type(17),&:nth-of-type(18){
-                    &:hover{
-                        .line{
-                            &::after{ height: 40%; }
-                        }
-                    }
                     a{ width:90%; }
                     
                 }
