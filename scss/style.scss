@@ -58,7 +58,7 @@ main{
             }
 
             &:nth-of-type(2){
-                width:100%; height:50vh;
+                width:100%; height:40vh;
                 h1{
                     font:36px/1 $titFont; color:#333;
                     margin-bottom:10px; padding-bottom:10px;
@@ -169,6 +169,7 @@ main{
                 a img{ height:300px; }
             }
 
+            //pc
             &:nth-of-type(7),&:nth-of-type(10),&:nth-of-type(16),&:nth-of-type(19){
                 width:75%; 
                 &:hover{
@@ -264,4 +265,201 @@ main{
 }
 
 @media screen and (max-width:1179px){
+    main{
+        section{
+            .item{
+                width:50%; height:60vh;
+                .inner{
+                    span{
+                        font-size:24px;
+                    }
+                    h2{
+                        width:90%;
+                        font: 700 30px/1.2 $movieTit;
+                    }
+                }
+    
+                &:nth-of-type(2){
+                    p{
+                        width:80%;
+                    }
+                }
+                &:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(15),&:nth-of-type(17),&:nth-of-type(18){
+                    &:hover{
+                        .line{
+                            &::after{ height: 40%; }
+                        }
+                    }
+                    a{ width:90%; }
+                    
+                }
+                //중간
+                &:nth-of-type(14),&:nth-of-type(15){
+                   width:100%; 
+                }
+
+                &:nth-of-type(14){
+                    .inner{
+                        padding:20px 20px 0px 20px;
+                        .wrap{
+                            padding:20px 20px 0px 20px;
+                            border-right:none;
+                            border-bottom:1px solid #fff;
+                        }
+                    }
+                    
+                }
+                &:nth-of-type(15){
+                    .inner{
+                        padding:0px 20px 40px 20px; 
+                        .wrap{
+                            p{
+                                width:90%;
+                            }
+                        }
+                    }
+                }
+    
+                &:nth-of-type(11), &:nth-of-type(12),&:nth-of-type(13){ width:100%; }
+
+
+                //1179px
+                &:nth-of-type(7),&:nth-of-type(10),&:nth-of-type(16),&:nth-of-type(19){
+                    width:100%; 
+                    &:hover{
+                        .line>span{
+                            width:30%;
+                        }
+                        a{
+                            right:100px;
+                        }
+                    }
+                    .line{
+                        &::after{ height:62%; }
+                    }
+                    h2{ width:90%; font-size:50px; }
+                    a{
+                        width:70%;
+                        img{ height:350px; }
+                        video{ height:350px; }
+                    }
+                }
+                &:nth-of-type(20){
+                    .inner{
+                        a{
+                            &::before{  width:35vw; }
+                            
+                            &::after{ width:35vw; }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:539px){
+    header{
+        display:none;
+    }
+    main{
+        margin-left:0%;
+        section{
+            .inner{
+                padding:10px;
+            }
+            .item{
+                width:100%;
+                .inner{
+                    span{
+                        em{ width:20px; height:20px; }
+                        font-size:24px;
+                    }
+                    h2{
+                        width:100%;
+                        font-size:30px;
+                    }
+                }
+                &:nth-of-type(2){
+                    height:60vh;
+                    h1{ font-size:32px; }
+                    .box{
+                        span{ font-size:16px; }
+                        a>i{ font-size:18px; }
+                    }
+                    p{
+                        width:95%; margin-top:10px;
+                        font:20px/1.5 $txtFont;
+                    }
+                }
+                &:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(15),&:nth-of-type(17),&:nth-of-type(18){
+                    &:hover{
+                        a{ left:10px; }
+                    }
+                    a{ width:100%; }
+                    
+                }
+
+                &:nth-of-type(14){
+                    height:30vh;
+                    .inner{
+                        .wrap{
+                            h3{
+                                font:32px/1 $titFont; color:#fff;
+                            }
+                        }
+                    }
+                    
+                }
+                &:nth-of-type(15){
+                    .inner{
+                        padding:0px 20px 40px 20px; 
+                        .wrap{
+                            p{
+                                width:100%;
+                                font:20px/1.3 $titFont; color:#fff;
+                            }
+                        }
+                    }
+                }
+    
+                &:nth-of-type(7),&:nth-of-type(10),&:nth-of-type(16),&:nth-of-type(19){
+                    width:100%; 
+                    &:hover{
+                        a{
+                            right:40px;
+                        }
+                        span{
+                            em{
+                                background:#000;
+                            }
+                        }
+                    }
+                    .line{
+                        width:90%;
+                        >span{ display:none; }
+                        &::after{ display:none; }
+                    }
+                    h2{ width:100%; font-size:36px; }
+                    a{
+                        width:80%;
+                        right:20px; margin-bottom:0px;
+                        img{ height:350px;
+                        }
+                        video{ height:350px; }
+                    }
+                }
+                &:nth-of-type(20){
+                    .inner{
+                        a{
+                            &::before{  width:25vw; }
+                            
+                            &::after{ width:25vw; }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }

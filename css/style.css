@@ -76,7 +76,7 @@ main {
           margin-top: 10px; }
       main section .item:nth-of-type(2) {
         width: 100%;
-        height: 50vh; }
+        height: 40vh; }
         main section .item:nth-of-type(2) h1 {
           font: 36px/1 "Cabin";
           color: #333;
@@ -278,5 +278,128 @@ main {
             main section .item:nth-of-type(20) .inner a:hover {
               background: #333;
               color: #fff; }
+
+@media screen and (max-width: 1179px) {
+  main section .item {
+    width: 50%;
+    height: 60vh; }
+    main section .item .inner span {
+      font-size: 24px; }
+    main section .item .inner h2 {
+      width: 90%;
+      font: 700 30px/1.2 "Open Sans"; }
+    main section .item:nth-of-type(2) p {
+      width: 80%; }
+    main section .item:nth-of-type(3):hover .line::after, main section .item:nth-of-type(4):hover .line::after, main section .item:nth-of-type(5):hover .line::after, main section .item:nth-of-type(6):hover .line::after, main section .item:nth-of-type(8):hover .line::after, main section .item:nth-of-type(9):hover .line::after, main section .item:nth-of-type(11):hover .line::after, main section .item:nth-of-type(12):hover .line::after, main section .item:nth-of-type(13):hover .line::after, main section .item:nth-of-type(15):hover .line::after, main section .item:nth-of-type(17):hover .line::after, main section .item:nth-of-type(18):hover .line::after {
+      height: 40%; }
+    main section .item:nth-of-type(3) a, main section .item:nth-of-type(4) a, main section .item:nth-of-type(5) a, main section .item:nth-of-type(6) a, main section .item:nth-of-type(8) a, main section .item:nth-of-type(9) a, main section .item:nth-of-type(11) a, main section .item:nth-of-type(12) a, main section .item:nth-of-type(13) a, main section .item:nth-of-type(15) a, main section .item:nth-of-type(17) a, main section .item:nth-of-type(18) a {
+      width: 90%; }
+    main section .item:nth-of-type(14), main section .item:nth-of-type(15) {
+      width: 100%; }
+    main section .item:nth-of-type(14) .inner {
+      padding: 20px 20px 0px 20px; }
+      main section .item:nth-of-type(14) .inner .wrap {
+        padding: 20px 20px 0px 20px;
+        border-right: none;
+        border-bottom: 1px solid #fff; }
+    main section .item:nth-of-type(15) .inner {
+      padding: 0px 20px 40px 20px; }
+      main section .item:nth-of-type(15) .inner .wrap p {
+        width: 90%; }
+    main section .item:nth-of-type(11), main section .item:nth-of-type(12), main section .item:nth-of-type(13) {
+      width: 100%; }
+    main section .item:nth-of-type(7), main section .item:nth-of-type(10), main section .item:nth-of-type(16), main section .item:nth-of-type(19) {
+      width: 100%; }
+      main section .item:nth-of-type(7):hover .line > span, main section .item:nth-of-type(10):hover .line > span, main section .item:nth-of-type(16):hover .line > span, main section .item:nth-of-type(19):hover .line > span {
+        width: 30%; }
+      main section .item:nth-of-type(7):hover a, main section .item:nth-of-type(10):hover a, main section .item:nth-of-type(16):hover a, main section .item:nth-of-type(19):hover a {
+        right: 100px; }
+      main section .item:nth-of-type(7) .line::after, main section .item:nth-of-type(10) .line::after, main section .item:nth-of-type(16) .line::after, main section .item:nth-of-type(19) .line::after {
+        height: 62%; }
+      main section .item:nth-of-type(7) h2, main section .item:nth-of-type(10) h2, main section .item:nth-of-type(16) h2, main section .item:nth-of-type(19) h2 {
+        width: 90%;
+        font-size: 50px; }
+      main section .item:nth-of-type(7) a, main section .item:nth-of-type(10) a, main section .item:nth-of-type(16) a, main section .item:nth-of-type(19) a {
+        width: 70%; }
+        main section .item:nth-of-type(7) a img, main section .item:nth-of-type(10) a img, main section .item:nth-of-type(16) a img, main section .item:nth-of-type(19) a img {
+          height: 350px; }
+        main section .item:nth-of-type(7) a video, main section .item:nth-of-type(10) a video, main section .item:nth-of-type(16) a video, main section .item:nth-of-type(19) a video {
+          height: 350px; }
+    main section .item:nth-of-type(20) .inner a::before {
+      width: 35vw; }
+    main section .item:nth-of-type(20) .inner a::after {
+      width: 35vw; } }
+@media screen and (max-width: 539px) {
+  header {
+    display: none; }
+
+  main {
+    margin-left: 0%; }
+    main section .inner {
+      padding: 10px; }
+    main section .item {
+      width: 100%; }
+      main section .item .inner span {
+        font-size: 24px; }
+        main section .item .inner span em {
+          width: 20px;
+          height: 20px; }
+      main section .item .inner h2 {
+        width: 100%;
+        font-size: 30px; }
+      main section .item:nth-of-type(2) {
+        height: 60vh; }
+        main section .item:nth-of-type(2) h1 {
+          font-size: 32px; }
+        main section .item:nth-of-type(2) .box span {
+          font-size: 16px; }
+        main section .item:nth-of-type(2) .box a > i {
+          font-size: 18px; }
+        main section .item:nth-of-type(2) p {
+          width: 95%;
+          margin-top: 10px;
+          font: 20px/1.5 "Roboto Condensed"; }
+      main section .item:nth-of-type(3):hover a, main section .item:nth-of-type(4):hover a, main section .item:nth-of-type(5):hover a, main section .item:nth-of-type(6):hover a, main section .item:nth-of-type(8):hover a, main section .item:nth-of-type(9):hover a, main section .item:nth-of-type(11):hover a, main section .item:nth-of-type(12):hover a, main section .item:nth-of-type(13):hover a, main section .item:nth-of-type(15):hover a, main section .item:nth-of-type(17):hover a, main section .item:nth-of-type(18):hover a {
+        left: 10px; }
+      main section .item:nth-of-type(3) a, main section .item:nth-of-type(4) a, main section .item:nth-of-type(5) a, main section .item:nth-of-type(6) a, main section .item:nth-of-type(8) a, main section .item:nth-of-type(9) a, main section .item:nth-of-type(11) a, main section .item:nth-of-type(12) a, main section .item:nth-of-type(13) a, main section .item:nth-of-type(15) a, main section .item:nth-of-type(17) a, main section .item:nth-of-type(18) a {
+        width: 100%; }
+      main section .item:nth-of-type(14) {
+        height: 30vh; }
+        main section .item:nth-of-type(14) .inner .wrap h3 {
+          font: 32px/1 "Cabin";
+          color: #fff; }
+      main section .item:nth-of-type(15) .inner {
+        padding: 0px 20px 40px 20px; }
+        main section .item:nth-of-type(15) .inner .wrap p {
+          width: 100%;
+          font: 20px/1.3 "Cabin";
+          color: #fff; }
+      main section .item:nth-of-type(7), main section .item:nth-of-type(10), main section .item:nth-of-type(16), main section .item:nth-of-type(19) {
+        width: 100%; }
+        main section .item:nth-of-type(7):hover a, main section .item:nth-of-type(10):hover a, main section .item:nth-of-type(16):hover a, main section .item:nth-of-type(19):hover a {
+          right: 40px; }
+        main section .item:nth-of-type(7):hover span em, main section .item:nth-of-type(10):hover span em, main section .item:nth-of-type(16):hover span em, main section .item:nth-of-type(19):hover span em {
+          background: #000; }
+        main section .item:nth-of-type(7) .line, main section .item:nth-of-type(10) .line, main section .item:nth-of-type(16) .line, main section .item:nth-of-type(19) .line {
+          width: 90%; }
+          main section .item:nth-of-type(7) .line > span, main section .item:nth-of-type(10) .line > span, main section .item:nth-of-type(16) .line > span, main section .item:nth-of-type(19) .line > span {
+            display: none; }
+          main section .item:nth-of-type(7) .line::after, main section .item:nth-of-type(10) .line::after, main section .item:nth-of-type(16) .line::after, main section .item:nth-of-type(19) .line::after {
+            display: none; }
+        main section .item:nth-of-type(7) h2, main section .item:nth-of-type(10) h2, main section .item:nth-of-type(16) h2, main section .item:nth-of-type(19) h2 {
+          width: 100%;
+          font-size: 36px; }
+        main section .item:nth-of-type(7) a, main section .item:nth-of-type(10) a, main section .item:nth-of-type(16) a, main section .item:nth-of-type(19) a {
+          width: 80%;
+          right: 20px;
+          margin-bottom: 0px; }
+          main section .item:nth-of-type(7) a img, main section .item:nth-of-type(10) a img, main section .item:nth-of-type(16) a img, main section .item:nth-of-type(19) a img {
+            height: 350px; }
+          main section .item:nth-of-type(7) a video, main section .item:nth-of-type(10) a video, main section .item:nth-of-type(16) a video, main section .item:nth-of-type(19) a video {
+            height: 350px; }
+      main section .item:nth-of-type(20) .inner a::before {
+        width: 25vw; }
+      main section .item:nth-of-type(20) .inner a::after {
+        width: 25vw; } }
 
 /*# sourceMappingURL=style.css.map */
