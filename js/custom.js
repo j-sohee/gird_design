@@ -1,9 +1,15 @@
 
-const items = document.querySelector("main section article .vid");
-items.addEventListener("mouseenter", e=>{
-    e.currentTarget.querySelector("video").play();
-});
+const items = document.querySelectorAll("main section article .vid");
+for(let el of items){
+    el.addEventListener("mouseenter", e=>{
+        e.currentTarget.querySelector("video").play();
+    });
+    
+}
 
-items.addEventListener("mouseleave", e=>{
-    e.currentTarget.querySelector("video").pause();
-});
+for(let el of items){
+    el.addEventListener("mouseleave", e=>{
+        e.currentTarget.querySelector("video").pause();
+    });
+}
+
