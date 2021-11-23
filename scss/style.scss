@@ -80,7 +80,7 @@ main{
                     }
                 }
                 p{
-                    width:35%; letter-spacing: 1px;
+                    width:50%; letter-spacing: 1px;
                     font:22px/1.5 $txtFont; color:#333;
                 }
             }
@@ -168,7 +168,13 @@ main{
 
             &:nth-of-type(12){
                 width:50%;
-                // .line{ width:93%; }
+                &:hover{
+                    .line{
+                        &::after{
+                            height: 55%;
+                        }
+                    }
+                }
                 a img{ height:300px; }
             }
 
@@ -221,10 +227,10 @@ main{
                     transition:0.5s; margin-bottom:20px;
                     z-index:1;
                     img{
-                        width:100%; height:400px; object-fit: cover;
+                        width:100%; height:380px; object-fit: cover;
                     }
                     video{
-                        width:100%; height:400px;  object-fit: cover;
+                        width:100%; height:380px;  object-fit: cover;
                     }
                 }
             }
@@ -283,9 +289,9 @@ main{
                 }
     
                 &:nth-of-type(2){
-
+                    height:55vh;
                     p{
-                        width:80%;
+                        width:90%;
                     }
                 }
                 &:nth-of-type(3),&:nth-of-type(4),&:nth-of-type(5),&:nth-of-type(6),&:nth-of-type(8),&:nth-of-type(9),&:nth-of-type(11),&:nth-of-type(12),&:nth-of-type(13),&:nth-of-type(15),&:nth-of-type(17),&:nth-of-type(18){
@@ -380,7 +386,7 @@ main{
                     }
                 }
                 &:nth-of-type(2){
-                    height:60vh;
+
                     h1{ font-size:32px; }
                     .box{
                         span{ font-size:16px; }
